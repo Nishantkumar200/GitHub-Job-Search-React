@@ -1,38 +1,74 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+
+body {
+  background-color: rgb(226, 231, 247);
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  color: blueviolet;
+  font-style: italic;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card {
+  position: relative;
+  box-sizing: border-box;
+  padding: 20px;
+  margin-bottom: 10px;
+  width: 700px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card-body {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.card_left .job-title {
+  font-weight: 600;
+  font-size: 18px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card_left .job-title .company {
+  font-size: 14px;
+  color: rgb(0, 0, 0, 0.8);
+}
+
+.card_left .job-date {
+  font-size: 14px;
+  color: #000;
+}
+
+.card_left .badge {
+  margin-right: 5px;
+  size: 10px;
+}
+img {
+  object-fit: contain;
+  width: 50px;
+  height: auto;
+}
+
+.apply {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.btn-primary {
+  width: 140px;
+  justify-content: start;
+}
+.show {
+  display: block;
+  font-size: 15px;
+  margin-top: 15px;
+}
+.hide {
+  display: none;
 }
